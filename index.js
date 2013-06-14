@@ -33,10 +33,10 @@ LocaleManager.prototype = {
     }
     extendDefault(base, items, !options.default);
   },
-  addDefault: function (locale, items, options) {
+  addDefault: function (items, options) {
     options = options || {};
     options.default = true;
-    this.add(locale, items, options);
+    this.add(this.baseLocale, items, options);
   },
   getLoc: function (locale, key, rel, silent) {
     var base = this.locales[locale]

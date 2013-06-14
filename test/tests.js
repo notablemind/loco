@@ -44,7 +44,7 @@ describe('i18n', function () {
 
   describe('with some defaults', function () {
     beforeEach(function(){
-      intn.addDefault('en', {a: 'A', b: 'B'});
+      intn.addDefault({a: 'A', b: 'B'});
     });
     describe('and an override', function () {
       beforeEach(function(){
