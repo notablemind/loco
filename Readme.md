@@ -1,11 +1,11 @@
 
-# i18n
+# Loco
 
   Internationalization component
 
 ## Installation
 
-    $ component install notablemind/i18n
+    $ component install notablemind/loco
 
 ## API
 
