@@ -1,0 +1,14 @@
+{
+  "name": "i18n",
+  "repo": "notablemind/i18n",
+  "description": "Internationalization component",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
