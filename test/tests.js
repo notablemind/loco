@@ -93,4 +93,26 @@ describe('i18n', function () {
       expect(intn.get.bind(intn, 'badKey')).to.throw(/not found/);
     });
   });
+
+  describe('when overriding part of an object', function () {
+    beforeEach(function () {
+      intn.addDefault({
+        a: {
+          b: 'B',
+          c: 'C'
+        }
+      });
+      intn.add('en', {
+        a: {
+          b: 'T'
+        }
+      });
+    });
+    it('should override the one', function () {
+      expect(intn.get('a.b')).to.eql('T');
+    });
+    it('should preserve the other', function () {
+      expect(intn.get('a.c')).to.eql('C');
+    });
+  });
 });

@@ -88,8 +88,8 @@ LocaleManager.prototype = {
       add: function (locale, items) {
         return that.add(locale, items, {rel: parts});
       },
-      addDefault: function (locale, items) {
-        return that.add(locale, items, {rel: parts, default: true});
+      addDefault: function (items) {
+        return that.add(that.baseLocale, items, {rel: parts, default: true});
       },
       rel: function (sub) {
         return that.rel(sub + '.' + name);
