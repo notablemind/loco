@@ -102,10 +102,12 @@ LocaleManager.prototype = {
 // override: bool
 var extendDefault = function(obj, news, override) {
   Object.keys(news).forEach(function(key) {
-    if (!obj.hasOwnProperty(key) || override) {
+    if (!obj.hasOwnProperty(key)) {
       obj[key] = news[key];
     } else if (typeof(news[key]) === 'object' && typeof(obj[key]) === 'object') {
       extendDefault(obj[key], news[key], override);
+    } else if (override) {
+      obj[key] = news[key];
     }
   });
 };
