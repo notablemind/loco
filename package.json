@@ -1,0 +1,26 @@
+{
+  "name": "loco",
+  "version": "0.0.1",
+  "description": "Localization component",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "~1.6.1",
+    "mocha": "~1.11.0"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/notablemind/loco.git"
+  },
+  "keywords": [
+    "localization",
+    "i18n",
+    "component"
+  ],
+  "author": "Jared Forsyth <jared@jaredforsyth.com>",
+  "license": "MIT",
+  "readmeFilename": "Readme.md"
+}
